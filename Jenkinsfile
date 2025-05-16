@@ -1,10 +1,12 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'maven:3.9.6-eclipse-temurin-17'
+        }
+    }
 
     environment {
-        // Cambia el token y el servidor Sonar si tienes otro URL
-        SONAR_HOST_URL = 'http://localhost:9000'
-        SONAR_LOGIN = credentials('sonar-token')  // Credencial que debes crear en Jenkins con el token de SonarQube
+        SONAR_TOKEN = credentials('sonarqube-token')
     }
 
     stages {
@@ -33,20 +35,14 @@ pipeline {
         }
 
         stage('SonarQube Analysis') {
+            environment {
+                scannerHome = tool 'SonarScanner'
+            }
             steps {
-                withSonarQubeEnv('SonarQube') {
-                    sh 'mvn sonar:sonar'
+                withSonarQubeEnv('SonarQubeServer') {
+                    sh 'mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN'
                 }
             }
-        }
-    }
-
-    post {
-        success {
-            echo 'Pipeline completed successfully!'
-        }
-        failure {
-            echo 'Pipeline failed.'
         }
     }
 }
