@@ -1,48 +1,57 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.9.6-eclipse-temurin-17'
-        }
-    }
+    agent any
 
     environment {
-        SONAR_TOKEN = credentials('sonarqube-token')
+        SONAR_TOKEN = credentials('SONAR_TOKEN')
     }
 
     stages {
-        stage('Checkout') {
+        stage('Build') {
             steps {
-                git branch: 'workshop', url: 'https://github.com/GimenaCcoracQuispe/Jenkis.git'
+                sh 'mvn clean install'
             }
         }
 
-        stage('Compile') {
-            steps {
-                sh 'mvn clean compile'
-            }
-        }
-
-        stage('Unit Tests') {
+        stage('Test') {
             steps {
                 sh 'mvn test'
             }
         }
 
-        stage('Package') {
+        stage('SonarCloud Analysis') {
             steps {
-                sh 'mvn package'
+                script {
+                    def branchName = env.BRANCH_NAME ?: 'workshop'
+                    sh """
+                        mvn sonar:sonar \
+                        -Dsonar.login=${SONAR_TOKEN} \
+                        -Dsonar.projectKey=GimenaCcoracQuispe_Jenkis \
+                        -Dsonar.branch.name=${branchName}
+                    """
+                }
             }
         }
 
-        stage('SonarQube Analysis') {
-            environment {
-                scannerHome = tool 'SonarScanner'
-            }
+        stage('Package') {
             steps {
-                withSonarQubeEnv('SonarQubeServer') {
-                    sh 'mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN'
+                script {
+                    sh '''
+                        echo "Buscando el JAR generado..."
+                        ls -lh target/*.jar
+
+                        echo "Copiando el JAR generado a workspace raíz (opcional)..."
+                        cp target/*.jar ./ || true
+                    '''
                 }
             }
+        }
+    }
+     post {
+        success {
+            echo "Pipeline ejecutado correctamente."
+        }
+        failure {
+            echo "El pipeline ha fallado."
         }
     }
 }
