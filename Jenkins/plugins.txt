@@ -1,0 +1,10 @@
+git
+workflow-aggregator
+pipeline-stage-view
+pipeline-model-definition
+blueocean
+docker-workflow
+credentials
+credentials-binding
+configuration-as-code
+maven-plugin
