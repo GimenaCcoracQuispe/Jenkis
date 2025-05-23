@@ -1,4 +1,4 @@
-# Etapa 1: Construcción del proyecto con Maven
+
 FROM maven:3.9.4-eclipse-temurin-17 AS builder
 
 WORKDIR /app
