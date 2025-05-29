@@ -154,4 +154,56 @@ class WorkshopServiceTest {
                 .verifyComplete();
     }
 
+    @Test
+    void testGetActivosByState() {
+        when(workshopRepository.findAllByState("A")).thenReturn(Flux.just(workshop));
+    
+        StepVerifier.create(workshopService.getActivosByState("A"))
+                .expectNext(workshop)
+                .verifyComplete();
+    }
+
+    @Test
+    void testSave() {
+        when(workshopRepository.save(any())).thenReturn(Mono.just(workshop));
+    
+        StepVerifier.create(workshopService.save(workshop))
+                .expectNext(workshop)
+                .verifyComplete();
+    }
+
+    @Test
+    void testRestoreWorkshopNotInactive() {
+        workshop.setState("A"); // Estado activo
+        when(workshopRepository.findById(1L)).thenReturn(Mono.just(workshop));
+    
+        StepVerifier.create(workshopService.restoreWorkshop(1L))
+                .expectNext(workshop) // Devuelve el workshop sin cambios
+                .verifyComplete();
+    
+        verify(kafkaProducerService, never()).sendWorkshopEvent(any());
+    }
+
+  @Test
+    void testDeleteByIdNotFound() {
+        when(workshopRepository.findById(1L)).thenReturn(Mono.empty());
+    
+        StepVerifier.create(workshopService.deleteById(1L))
+                .verifyComplete();
+    
+        verify(kafkaProducerService, never()).sendWorkshopEvent(any());
+        verify(workshopRepository, never()).deleteById(anyLong());
+    }
+  
+    @Test
+    void testLogicalDeleteNotFound() {
+        when(workshopRepository.findById(1L)).thenReturn(Mono.empty());
+    
+        StepVerifier.create(workshopService.logicalDelete(1L))
+                .verifyComplete();
+    
+        verify(kafkaProducerService, never()).sendWorkshopEvent(any());
+        verify(workshopRepository, never()).save(any());
+    }
+    
 }
