@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="1.794" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="2.285" tests="12" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="IRBRC" value="/home/gitpod/.rvm/rubies/ruby-3.2.8/.irbrc"/>
-    <property name="PYENV_SHELL" value="bash"/>
     <property name="PATH" value="/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/home/gitpod/.local/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/home/gitpod/.rvm/gems/ruby-3.2.8/bin:/home/gitpod/.rvm/gems/ruby-3.2.8@global/bin:/home/gitpod/.rvm/rubies/ruby-3.2.8/bin:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.yarn/bin:/home/gitpod/.pnpm:/home/gitpod/.pyenv/bin:/home/gitpod/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/home/gitpod/.local/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.rvm/bin"/>
+    <property name="PYENV_SHELL" value="bash"/>
     <property name="NIX_VERSION" value="2.19.2"/>
+    <property name="IRBRC" value="/home/gitpod/.rvm/rubies/ruby-3.2.8/.irbrc"/>
     <property name="PYENV_FAKEROOT" value="/workspace/.pyenv_mirror/fakeroot"/>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -20,21 +20,21 @@
     <property name="GITPOD_THEIA_PORT" value="23000"/>
     <property name="GITPOD_DISABLE_JETBRAINS_LOCAL_PORT_FORWARDING" value="false"/>
     <property name="SDKMAN_DIR" value="/home/gitpod/.sdkman"/>
-    <property name="PROMPT_COMMAND" value="__vsc_prompt_cmd_original"/>
-    <property name="VSCODE_GIT_ASKPASS_NODE" value="/ide/node"/>
-    <property name="rvm_version" value="1.29.12 (latest)"/>
     <property name="NGINX_DOCROOT_IN_REPO" value="public"/>
+    <property name="rvm_version" value="1.29.12 (latest)"/>
+    <property name="VSCODE_GIT_ASKPASS_NODE" value="/ide/node"/>
+    <property name="PROMPT_COMMAND" value="__vsc_prompt_cmd_original"/>
     <property name="TERM_PROGRAM_VERSION" value="1.100.2"/>
     <property name="PWD" value="/workspace/Jenkis"/>
     <property name="CARGO_HOME" value="/workspace/.cargo"/>
     <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/17.0.9-tem/lib"/>
-    <property name="sun.java.command" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529200604116_3.jar /workspace/Jenkis/target/surefire 2025-05-29T20-06-04_051-jvmRun1 surefire-20250529200604116_1tmp surefire_0-20250529200604116_2tmp"/>
+    <property name="sun.java.command" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529202235606_3.jar /workspace/Jenkis/target/surefire 2025-05-29T20-22-35_490-jvmRun1 surefire-20250529202235606_1tmp surefire_0-20250529202235606_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="LESSOPEN" value="| /usr/bin/lesspipe %s"/>
     <property name="SDKMAN_CANDIDATES_API" value="https://api.sdkman.io/2"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="MY_RUBY_HOME" value="/home/gitpod/.rvm/rubies/ruby-3.2.8"/>
     <property name="PIPENV_VENV_IN_PROJECT" value="true"/>
+    <property name="MY_RUBY_HOME" value="/home/gitpod/.rvm/rubies/ruby-3.2.8"/>
     <property name="VSX_REGISTRY_URL" value="https://open-vsx.gitpod.io"/>
     <property name="java.version.date" value="2023-10-17"/>
     <property name="java.home" value="/home/gitpod/.sdkman/candidates/java/17.0.9-tem"/>
@@ -61,13 +61,13 @@
     <property name="JAVA_HOME" value="/home/gitpod/.sdkman/candidates/java/current"/>
     <property name="user.name" value="gitpod"/>
     <property name="GIT_EDITOR" value="/ide/bin/remote-cli/gitpod-code --wait"/>
-    <property name="GITPOD_ANALYTICS_SEGMENT_ENDPOINT" value="https://gitpod.io/analytics"/>
     <property name="TERM" value="xterm-256color"/>
+    <property name="GITPOD_ANALYTICS_SEGMENT_ENDPOINT" value="https://gitpod.io/analytics"/>
     <property name="GRADLE_HOME" value="/home/gitpod/.sdkman/candidates/gradle/current"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="GRADLE_USER_HOME" value="/workspace/.gradle/"/>
-    <property name="JAVA_TOOL_OPTIONS" value="-XX:+UseContainerSupport -XX:ActiveProcessorCount=1"/>
     <property name="GITPOD_CPU_COUNT" value="1"/>
+    <property name="JAVA_TOOL_OPTIONS" value="-XX:+UseContainerSupport -XX:ActiveProcessorCount=1"/>
     <property name="VSCODE_IPC_HOOK_CLI" value="/tmp/vscode-ipc-72dec94f-af2b-4846-8ef3-e7fe6d790d3e.sock"/>
     <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
     <property name="localRepository" value="/workspace/m2-repository"/>
@@ -77,7 +77,7 @@
     <property name="TERM_PROGRAM" value="vscode"/>
     <property name="THEIA_RATELIMIT_LOG" value="50"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="60485"/>
+    <property name="PID" value="64173"/>
     <property name="PYENV_MIRROR" value="/workspace/.pyenv_mirror"/>
     <property name="MAVEN_PROJECTBASEDIR" value="/workspace/Jenkis"/>
     <property name="GOROOT" value="/home/gitpod/go"/>
@@ -86,8 +86,8 @@
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="GEM_PATH" value="/home/gitpod/.rvm/gems/ruby-3.2.8:/home/gitpod/.rvm/gems/ruby-3.2.8@global"/>
-    <property name="GITPOD_DEFAULT_WORKSPACE_IMAGE" value="gitpod/workspace-full:latest"/>
     <property name="THEIA_MINI_BROWSER_HOST_PATTERN" value="browser-{{hostname}}"/>
+    <property name="GITPOD_DEFAULT_WORKSPACE_IMAGE" value="gitpod/workspace-full:latest"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="GITPOD_SSH_CA_PUBLIC_KEY" value="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMQPGLZ5GCM03ISbMVdPZE9YO3KjbXcaxpdcUNPRNnbJ Gitpod-CA"/>
@@ -104,9 +104,9 @@
     <property name="DB_USERNAME" value="db_prs1_owner"/>
     <property name="user.timezone" value="Etc/UTC"/>
     <property name="GITPOD_CODE_HOST" value="gitpod.io"/>
+    <property name="GITPOD_REPO_ROOTS" value="/workspace/Jenkis"/>
     <property name="GITPOD_HOST" value="https://gitpod.io"/>
     <property name="RUSTUP_HOME" value="/home/gitpod/.rustup"/>
-    <property name="GITPOD_REPO_ROOTS" value="/workspace/Jenkis"/>
     <property name="GITPOD_IS_SET_JAVA_XMX" value="false"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="os.name" value="Linux"/>
@@ -125,13 +125,13 @@
     <property name="GP_OPEN_EDITOR" value="/ide/bin/remote-cli/gitpod-code"/>
     <property name="GITPOD_PREVENT_METADATA_ACCESS" value="true"/>
     <property name="PYENV_ROOT" value="/home/gitpod/.pyenv"/>
-    <property name="GOPATH" value="/workspace/go"/>
     <property name="OLDPWD" value="/workspace/Jenkis"/>
     <property name="GITPOD_ANALYTICS_WRITER" value="segment"/>
-    <property name="VISUAL" value="/ide/bin/remote-cli/gitpod-code"/>
+    <property name="GOPATH" value="/workspace/go"/>
     <property name="GEM_HOME" value="/home/gitpod/.rvm/gems/ruby-3.2.8"/>
-    <property name="GO_VERSION" value="1.24.3"/>
+    <property name="VISUAL" value="/ide/bin/remote-cli/gitpod-code"/>
     <property name="THEIA_WEBVIEW_EXTERNAL_ENDPOINT" value="webview-{{hostname}}"/>
+    <property name="GO_VERSION" value="1.24.3"/>
     <property name="GP_EXTERNAL_BROWSER" value="/ide/bin/remote-cli/gitpod-code --openExternal"/>
     <property name="RUBY_VERSION" value="ruby-3.2.8"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
@@ -140,10 +140,10 @@
     <property name="GITPOD_COMMIT_ANNOTATION_ENABLED" value="false"/>
     <property name="GITPOD_WORKSPACE_CLASS" value="g1-standard"/>
     <property name="LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"/>
-    <property name="surefire.real.class.path" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529200604116_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529202235606_3.jar"/>
     <property name="HISTFILE" value="/workspace/.gitpod/.shell_history"/>
-    <property name="BROWSER" value="/ide/bin/helpers/browser.sh"/>
     <property name="LESSCLOSE" value="/usr/bin/lesspipe %s %s"/>
+    <property name="BROWSER" value="/ide/bin/helpers/browser.sh"/>
     <property name="MANPATH" value="/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man"/>
     <property name="rvm_bin_path" value="/home/gitpod/.rvm/bin"/>
     <property name="PYTHONUSERBASE_VERSION_FILE" value="/workspace/.pyenv_mirror/user/.mounted_version"/>
@@ -181,13 +181,13 @@
     <property name="HOSTNAME" value="gimenaccoracquis-jenkis-oomsfa4hc32"/>
     <property name="java.vm.version" value="17.0.9+9"/>
     <property name="java.class.version" value="61.0"/>
+    <property name="GITPOD_GIT_USER_EMAIL" value="gimena.ccorac@vallegrande.edu.pe"/>
     <property name="GP_PREVIEW_BROWSER" value="/ide/bin/remote-cli/gitpod-code --preview"/>
     <property name="HOME" value="/home/gitpod"/>
-    <property name="GITPOD_GIT_USER_EMAIL" value="gimena.ccorac@vallegrande.edu.pe"/>
   </properties>
-  <testcase name="testCreateWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.911">
-    <system-out><![CDATA[2025-05-29T20:06:10.277Z  INFO 60485 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pe.edu.vallegrande.workshop.controller.WorkshopControllerTest]: WorkshopControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-29T20:06:10.302Z  INFO 60485 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pe.edu.vallegrande.workshop.WorkshopApplication for test class pe.edu.vallegrande.workshop.controller.WorkshopControllerTest
+  <testcase name="testDeactivateWorkshop_NotFound" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.766">
+    <system-out><![CDATA[2025-05-29T20:22:42.058Z  INFO 64173 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pe.edu.vallegrande.workshop.controller.WorkshopControllerTest]: WorkshopControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-29T20:22:42.086Z  INFO 64173 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pe.edu.vallegrande.workshop.WorkshopApplication for test class pe.edu.vallegrande.workshop.controller.WorkshopControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -198,15 +198,114 @@
 
  :: Spring Boot ::                (v3.4.4)
 
-2025-05-29T20:06:10.362Z  INFO 60485 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Starting WorkshopControllerTest using Java 17.0.9 with PID 60485 (started by gitpod in /workspace/Jenkis)
-2025-05-29T20:06:10.363Z  INFO 60485 --- [           main] p.e.v.w.c.WorkshopControllerTest         : The following 1 profile is active: "test"
-2025-05-29T20:06:11.017Z  INFO 60485 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Started WorkshopControllerTest in 0.711 seconds (process running for 6.781)
+2025-05-29T20:22:42.130Z  INFO 64173 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Starting WorkshopControllerTest using Java 17.0.9 with PID 64173 (started by gitpod in /workspace/Jenkis)
+2025-05-29T20:22:42.130Z  INFO 64173 --- [           main] p.e.v.w.c.WorkshopControllerTest         : The following 1 profile is active: "test"
+2025-05-29T20:22:42.869Z  INFO 64173 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Started WorkshopControllerTest in 0.78 seconds (process running for 7.129)
+2025-05-29T20:22:43.435Z ERROR 64173 --- [     parallel-1] a.w.r.e.AbstractErrorWebExceptionHandler : [61d96869]  500 Server Error for HTTP DELETE "/api/workshops/deactive/1"
+
+java.lang.RuntimeException: Not found
+	at pe.edu.vallegrande.workshop.controller.WorkshopControllerTest.testDeactivateWorkshop_NotFound(WorkshopControllerTest.java:212) ~[test-classes/:na]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Handler pe.edu.vallegrande.workshop.controller.WorkshopController#deactivateWorkshop(Long) [DispatcherHandler]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP DELETE "/api/workshops/deactive/1" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at pe.edu.vallegrande.workshop.controller.WorkshopControllerTest.testDeactivateWorkshop_NotFound(WorkshopControllerTest.java:212) ~[test-classes/:na]
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+		at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.4.jar:1.11.4]
+		at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+		at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+		at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+		at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.2.jar:3.5.2]
+		at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.2.jar:3.5.2]
+
 ]]></system-out>
   </testcase>
-  <testcase name="testGetWorkshopById" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.037"/>
-  <testcase name="testGetWorkshopList" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.066">
-    <system-out><![CDATA[2025-05-29T20:06:11.996Z  INFO 60485 --- [     parallel-1] p.e.v.w.controller.WorkshopController    : Workshop data: Workshop(id=1, name=Curso de Java, description=Aprende Java desde cero, startDate=2025-05-01, endDate=2025-05-31, observation=Incluye proyectos, state=A, personId=2,10,11,19,18,17,25,24)
+  <testcase name="testGetActiveWorkshops" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.331"/>
+  <testcase name="testCreateWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.219"/>
+  <testcase name="testUpdateWorkshop_NotFound" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.014"/>
+  <testcase name="testActivateWorkshop_Success" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.011"/>
+  <testcase name="testGetWorkshopById" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.01"/>
+  <testcase name="testGetWorkshopList" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.026">
+    <system-out><![CDATA[2025-05-29T20:22:44.250Z  INFO 64173 --- [     parallel-1] p.e.v.w.controller.WorkshopController    : Workshop data: Workshop(id=1, name=Curso de Java, description=Aprende Java desde cero, startDate=2025-05-01, endDate=2025-05-31, observation=Incluye proyectos, state=A, personId=2,10,11,19,18,17,25,24)
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.017"/>
+  <testcase name="testActivateWorkshop_NotFound" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.011"/>
+  <testcase name="testDeleteWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.01"/>
+  <testcase name="testGetInactiveWorkshops" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.011"/>
+  <testcase name="testDeactivateWorkshop_Success" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.008"/>
+  <testcase name="testUpdateWorkshop_Success" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.014"/>
 </testsuite>

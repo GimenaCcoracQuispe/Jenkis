@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.356" tests="14" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.416" tests="14" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="IRBRC" value="/home/gitpod/.rvm/rubies/ruby-3.2.8/.irbrc"/>
-    <property name="PYENV_SHELL" value="bash"/>
     <property name="PATH" value="/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/home/gitpod/.local/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/home/gitpod/.rvm/gems/ruby-3.2.8/bin:/home/gitpod/.rvm/gems/ruby-3.2.8@global/bin:/home/gitpod/.rvm/rubies/ruby-3.2.8/bin:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.yarn/bin:/home/gitpod/.pnpm:/home/gitpod/.pyenv/bin:/home/gitpod/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/home/gitpod/.local/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.rvm/bin"/>
+    <property name="PYENV_SHELL" value="bash"/>
     <property name="NIX_VERSION" value="2.19.2"/>
+    <property name="IRBRC" value="/home/gitpod/.rvm/rubies/ruby-3.2.8/.irbrc"/>
     <property name="PYENV_FAKEROOT" value="/workspace/.pyenv_mirror/fakeroot"/>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -20,21 +20,21 @@
     <property name="GITPOD_THEIA_PORT" value="23000"/>
     <property name="GITPOD_DISABLE_JETBRAINS_LOCAL_PORT_FORWARDING" value="false"/>
     <property name="SDKMAN_DIR" value="/home/gitpod/.sdkman"/>
-    <property name="PROMPT_COMMAND" value="__vsc_prompt_cmd_original"/>
-    <property name="VSCODE_GIT_ASKPASS_NODE" value="/ide/node"/>
-    <property name="rvm_version" value="1.29.12 (latest)"/>
     <property name="NGINX_DOCROOT_IN_REPO" value="public"/>
+    <property name="rvm_version" value="1.29.12 (latest)"/>
+    <property name="VSCODE_GIT_ASKPASS_NODE" value="/ide/node"/>
+    <property name="PROMPT_COMMAND" value="__vsc_prompt_cmd_original"/>
     <property name="TERM_PROGRAM_VERSION" value="1.100.2"/>
     <property name="PWD" value="/workspace/Jenkis"/>
     <property name="CARGO_HOME" value="/workspace/.cargo"/>
     <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/17.0.9-tem/lib"/>
-    <property name="sun.java.command" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529200604116_3.jar /workspace/Jenkis/target/surefire 2025-05-29T20-06-04_051-jvmRun1 surefire-20250529200604116_1tmp surefire_0-20250529200604116_2tmp"/>
+    <property name="sun.java.command" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529202235606_3.jar /workspace/Jenkis/target/surefire 2025-05-29T20-22-35_490-jvmRun1 surefire-20250529202235606_1tmp surefire_0-20250529202235606_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="LESSOPEN" value="| /usr/bin/lesspipe %s"/>
     <property name="SDKMAN_CANDIDATES_API" value="https://api.sdkman.io/2"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="MY_RUBY_HOME" value="/home/gitpod/.rvm/rubies/ruby-3.2.8"/>
     <property name="PIPENV_VENV_IN_PROJECT" value="true"/>
+    <property name="MY_RUBY_HOME" value="/home/gitpod/.rvm/rubies/ruby-3.2.8"/>
     <property name="VSX_REGISTRY_URL" value="https://open-vsx.gitpod.io"/>
     <property name="java.version.date" value="2023-10-17"/>
     <property name="java.home" value="/home/gitpod/.sdkman/candidates/java/17.0.9-tem"/>
@@ -61,13 +61,13 @@
     <property name="JAVA_HOME" value="/home/gitpod/.sdkman/candidates/java/current"/>
     <property name="user.name" value="gitpod"/>
     <property name="GIT_EDITOR" value="/ide/bin/remote-cli/gitpod-code --wait"/>
-    <property name="GITPOD_ANALYTICS_SEGMENT_ENDPOINT" value="https://gitpod.io/analytics"/>
     <property name="TERM" value="xterm-256color"/>
+    <property name="GITPOD_ANALYTICS_SEGMENT_ENDPOINT" value="https://gitpod.io/analytics"/>
     <property name="GRADLE_HOME" value="/home/gitpod/.sdkman/candidates/gradle/current"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="GRADLE_USER_HOME" value="/workspace/.gradle/"/>
-    <property name="JAVA_TOOL_OPTIONS" value="-XX:+UseContainerSupport -XX:ActiveProcessorCount=1"/>
     <property name="GITPOD_CPU_COUNT" value="1"/>
+    <property name="JAVA_TOOL_OPTIONS" value="-XX:+UseContainerSupport -XX:ActiveProcessorCount=1"/>
     <property name="VSCODE_IPC_HOOK_CLI" value="/tmp/vscode-ipc-72dec94f-af2b-4846-8ef3-e7fe6d790d3e.sock"/>
     <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
     <property name="localRepository" value="/workspace/m2-repository"/>
@@ -77,7 +77,7 @@
     <property name="TERM_PROGRAM" value="vscode"/>
     <property name="THEIA_RATELIMIT_LOG" value="50"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="60485"/>
+    <property name="PID" value="64173"/>
     <property name="PYENV_MIRROR" value="/workspace/.pyenv_mirror"/>
     <property name="MAVEN_PROJECTBASEDIR" value="/workspace/Jenkis"/>
     <property name="GOROOT" value="/home/gitpod/go"/>
@@ -86,8 +86,8 @@
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="GEM_PATH" value="/home/gitpod/.rvm/gems/ruby-3.2.8:/home/gitpod/.rvm/gems/ruby-3.2.8@global"/>
-    <property name="GITPOD_DEFAULT_WORKSPACE_IMAGE" value="gitpod/workspace-full:latest"/>
     <property name="THEIA_MINI_BROWSER_HOST_PATTERN" value="browser-{{hostname}}"/>
+    <property name="GITPOD_DEFAULT_WORKSPACE_IMAGE" value="gitpod/workspace-full:latest"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="GITPOD_SSH_CA_PUBLIC_KEY" value="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMQPGLZ5GCM03ISbMVdPZE9YO3KjbXcaxpdcUNPRNnbJ Gitpod-CA"/>
@@ -104,9 +104,9 @@
     <property name="DB_USERNAME" value="db_prs1_owner"/>
     <property name="user.timezone" value="Etc/UTC"/>
     <property name="GITPOD_CODE_HOST" value="gitpod.io"/>
+    <property name="GITPOD_REPO_ROOTS" value="/workspace/Jenkis"/>
     <property name="GITPOD_HOST" value="https://gitpod.io"/>
     <property name="RUSTUP_HOME" value="/home/gitpod/.rustup"/>
-    <property name="GITPOD_REPO_ROOTS" value="/workspace/Jenkis"/>
     <property name="GITPOD_IS_SET_JAVA_XMX" value="false"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="os.name" value="Linux"/>
@@ -125,13 +125,13 @@
     <property name="GP_OPEN_EDITOR" value="/ide/bin/remote-cli/gitpod-code"/>
     <property name="GITPOD_PREVENT_METADATA_ACCESS" value="true"/>
     <property name="PYENV_ROOT" value="/home/gitpod/.pyenv"/>
-    <property name="GOPATH" value="/workspace/go"/>
     <property name="OLDPWD" value="/workspace/Jenkis"/>
     <property name="GITPOD_ANALYTICS_WRITER" value="segment"/>
-    <property name="VISUAL" value="/ide/bin/remote-cli/gitpod-code"/>
+    <property name="GOPATH" value="/workspace/go"/>
     <property name="GEM_HOME" value="/home/gitpod/.rvm/gems/ruby-3.2.8"/>
-    <property name="GO_VERSION" value="1.24.3"/>
+    <property name="VISUAL" value="/ide/bin/remote-cli/gitpod-code"/>
     <property name="THEIA_WEBVIEW_EXTERNAL_ENDPOINT" value="webview-{{hostname}}"/>
+    <property name="GO_VERSION" value="1.24.3"/>
     <property name="GP_EXTERNAL_BROWSER" value="/ide/bin/remote-cli/gitpod-code --openExternal"/>
     <property name="RUBY_VERSION" value="ruby-3.2.8"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
@@ -140,10 +140,10 @@
     <property name="GITPOD_COMMIT_ANNOTATION_ENABLED" value="false"/>
     <property name="GITPOD_WORKSPACE_CLASS" value="g1-standard"/>
     <property name="LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"/>
-    <property name="surefire.real.class.path" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529200604116_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529202235606_3.jar"/>
     <property name="HISTFILE" value="/workspace/.gitpod/.shell_history"/>
-    <property name="BROWSER" value="/ide/bin/helpers/browser.sh"/>
     <property name="LESSCLOSE" value="/usr/bin/lesspipe %s %s"/>
+    <property name="BROWSER" value="/ide/bin/helpers/browser.sh"/>
     <property name="MANPATH" value="/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man"/>
     <property name="rvm_bin_path" value="/home/gitpod/.rvm/bin"/>
     <property name="PYTHONUSERBASE_VERSION_FILE" value="/workspace/.pyenv_mirror/user/.mounted_version"/>
@@ -181,19 +181,19 @@
     <property name="HOSTNAME" value="gimenaccoracquis-jenkis-oomsfa4hc32"/>
     <property name="java.vm.version" value="17.0.9+9"/>
     <property name="java.class.version" value="61.0"/>
+    <property name="GITPOD_GIT_USER_EMAIL" value="gimena.ccorac@vallegrande.edu.pe"/>
     <property name="GP_PREVIEW_BROWSER" value="/ide/bin/remote-cli/gitpod-code --preview"/>
     <property name="HOME" value="/home/gitpod"/>
-    <property name="GITPOD_GIT_USER_EMAIL" value="gimena.ccorac@vallegrande.edu.pe"/>
   </properties>
-  <testcase name="testRestoreWorkshop" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.311"/>
+  <testcase name="testRestoreWorkshop" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.365"/>
   <testcase name="testDeleteByIdNotFound" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.004"/>
-  <testcase name="testSave" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.002"/>
-  <testcase name="testGetActivosByState" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.002"/>
+  <testcase name="testSave" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.003"/>
+  <testcase name="testGetActivosByState" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.003"/>
   <testcase name="testFindStatus" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.002"/>
-  <testcase name="testUpdateWorkshop" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.003"/>
-  <testcase name="testLogicalDelete" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.003"/>
+  <testcase name="testUpdateWorkshop" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.004"/>
+  <testcase name="testLogicalDelete" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.004"/>
   <testcase name="testFindById" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.002"/>
-  <testcase name="testCreateWorkshopWithDefaultState" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.007">
+  <testcase name="testCreateWorkshopWithDefaultState" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.008">
     <system-out><![CDATA[Before createWorkshop: state=null
 Saving workshop with state: A
 Returned workshop with state: A
@@ -202,6 +202,6 @@ Returned workshop with state: A
   <testcase name="testDeleteById" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.004"/>
   <testcase name="testFindAllWorkshop" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.002"/>
   <testcase name="testRestoreWorkshopNotInactive" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.002"/>
-  <testcase name="testLogicalDeleteNotFound" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.003"/>
+  <testcase name="testLogicalDeleteNotFound" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.002"/>
   <testcase name="testInactiveWorkshop" classname="pe.edu.vallegrande.workshop.service.WorkshopServiceTest" time="0.002"/>
 </testsuite>

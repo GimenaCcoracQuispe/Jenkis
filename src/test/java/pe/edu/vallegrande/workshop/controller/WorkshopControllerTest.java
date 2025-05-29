@@ -104,4 +104,117 @@ class WorkshopControllerTest {
                 .exchange()
                 .expectStatus().isOk();
     }
+
+    @Test
+void testGetActiveWorkshops() {
+    Mockito.when(workshopService.getActivosByState("A")).thenReturn(Flux.just(workshop));
+
+    webTestClient.get()
+            .uri("/api/workshops/active")
+            .accept(MediaType.APPLICATION_JSON)
+            .exchange()
+            .expectStatus().isOk()
+            .expectBodyList(Workshop.class)
+            .hasSize(1)
+            .value(workshops -> {
+                assert workshops.get(0).getState().equals("A");
+            });
+}
+
+@Test
+void testGetInactiveWorkshops() {
+    workshop.setState("I");
+    Mockito.when(workshopService.findStatus("I")).thenReturn(Flux.just(workshop));
+
+    webTestClient.get()
+            .uri("/api/workshops/inactive")
+            .accept(MediaType.APPLICATION_JSON)
+            .exchange()
+            .expectStatus().isOk()
+            .expectBodyList(Workshop.class)
+            .hasSize(1)
+            .value(workshops -> {
+                assert workshops.get(0).getState().equals("I");
+            });
+}
+
+@Test
+void testUpdateWorkshop_Success() {
+    Workshop updatedWorkshop = new Workshop();
+    updatedWorkshop.setName("Curso Avanzado");
+    updatedWorkshop.setDescription("Aprende Java avanzado");
+    updatedWorkshop.setStartDate(LocalDate.of(2025, 6, 1));
+    updatedWorkshop.setEndDate(LocalDate.of(2025, 6, 30));
+    updatedWorkshop.setObservation("Incluye proyectos avanzados");
+    updatedWorkshop.setPersonId("3,5,7");
+    updatedWorkshop.setState("A");
+
+    Mockito.when(workshopService.findById(1L)).thenReturn(Mono.just(workshop));
+    Mockito.when(workshopService.updateWorkshop(Mockito.any(Workshop.class))).thenReturn(Mono.just(updatedWorkshop));
+
+    webTestClient.put()
+            .uri("/api/workshops/update/1")
+            .contentType(MediaType.APPLICATION_JSON)
+            .bodyValue(updatedWorkshop)
+            .exchange()
+            .expectStatus().isOk()
+            .expectBody()
+            .jsonPath("$.name").isEqualTo("Curso Avanzado")
+            .jsonPath("$.description").isEqualTo("Aprende Java avanzado");
+}
+
+@Test
+void testUpdateWorkshop_NotFound() {
+    Mockito.when(workshopService.findById(1L)).thenReturn(Mono.empty());
+
+    webTestClient.put()
+            .uri("/api/workshops/update/1")
+            .contentType(MediaType.APPLICATION_JSON)
+            .bodyValue(workshop)
+            .exchange()
+            .expectStatus().isNotFound();
+}
+
+@Test
+void testActivateWorkshop_Success() {
+    Mockito.when(workshopService.restoreWorkshop(1L)).thenReturn(Mono.just(workshop));
+
+    webTestClient.put()
+            .uri("/api/workshops/activate/1")
+            .exchange()
+            .expectStatus().isOk()
+            .expectBody()
+            .jsonPath("$.id").isEqualTo(1);
+}
+
+@Test
+void testActivateWorkshop_NotFound() {
+    Mockito.when(workshopService.restoreWorkshop(1L)).thenReturn(Mono.empty());
+
+    webTestClient.put()
+            .uri("/api/workshops/activate/1")
+            .exchange()
+            .expectStatus().isNotFound();
+}
+
+@Test
+void testDeactivateWorkshop_Success() {
+    Mockito.when(workshopService.logicalDelete(1L)).thenReturn(Mono.empty());
+
+    webTestClient.delete()
+            .uri("/api/workshops/deactive/1")
+            .exchange()
+            .expectStatus().isOk();
+}
+
+@Test
+void testDeactivateWorkshop_NotFound() {
+    Mockito.when(workshopService.logicalDelete(1L)).thenReturn(Mono.error(new RuntimeException("Not found")));
+
+    webTestClient.delete()
+            .uri("/api/workshops/deactive/1")
+            .exchange()
+            .expectStatus().is5xxServerError();
+}
+
 }
