@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import pe.edu.vallegrande.workshop.dto.WorkshopKafkaEventDto;
 
 @ExtendWith(MockitoExtension.class)
-class KafkaProducerServiceTest {
+public class KafkaProducerServiceTest {
 
     @Mock
     private KafkaTemplate<String, String> kafkaTemplate;
