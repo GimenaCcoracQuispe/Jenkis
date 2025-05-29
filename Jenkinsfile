@@ -27,6 +27,7 @@ pipeline {
                         -Dsonar.login=${SONAR_TOKEN} \
                         -Dsonar.projectKey=GimenaCcoracQuispe_Jenkis \
                         -Dsonar.branch.name=${branchName}
+                        -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
                     """
                 }
             }

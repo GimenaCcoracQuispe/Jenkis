@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SecurityConfig.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">workshop</a> &gt; <a href="index.source.html" class="el_package">pe.edu.vallegrande.workshop.config</a> &gt; <span class="el_source">SecurityConfig.java</span></div><h1>SecurityConfig.java</h1><pre class="source lang-java linenums">package pe.edu.vallegrande.workshop.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
+import org.springframework.security.config.web.server.ServerHttpSecurity;
+import org.springframework.security.web.server.SecurityWebFilterChain;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.reactive.CorsConfigurationSource;
+import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
+
+import java.util.List;
+
+@Configuration
+@EnableWebFluxSecurity
+<span class="fc" id="L17">public class SecurityConfig {</span>
+
+    @Bean
+    public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
+<span class="fc" id="L21">        return http</span>
+<span class="fc" id="L22">                .csrf(ServerHttpSecurity.CsrfSpec::disable)</span>
+<span class="fc" id="L23">                .authorizeExchange(auth -&gt; auth</span>
+<span class="fc" id="L24">                        .pathMatchers(</span>
+                                &quot;/swagger-ui.html&quot;, &quot;/swagger-ui/**&quot;
+<span class="fc" id="L26">                        ).permitAll()</span>
+<span class="fc" id="L27">                        .anyExchange().authenticated()</span>
+                )
+<span class="fc" id="L29">                .oauth2ResourceServer(oauth2 -&gt; oauth2</span>
+<span class="fc" id="L30">                        .jwt(Customizer.withDefaults())</span>
+                )
+<span class="fc" id="L32">                .cors(cors -&gt; cors</span>
+<span class="fc" id="L33">                        .configurationSource(corsConfigurationSource())</span>
+                )
+<span class="fc" id="L35">                .build();</span>
+    }
+
+    @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+<span class="fc" id="L40">        CorsConfiguration config = new CorsConfiguration();</span>
+<span class="fc" id="L41">        config.setAllowedOrigins(List.of(&quot;http://localhost:4200&quot;));</span>
+<span class="fc" id="L42">        config.setAllowedMethods(List.of(&quot;GET&quot;, &quot;POST&quot;, &quot;PUT&quot;, &quot;DELETE&quot;, &quot;OPTIONS&quot;));</span>
+<span class="fc" id="L43">        config.setAllowedHeaders(List.of(&quot;Authorization&quot;, &quot;Content-Type&quot;, &quot;Accept&quot;));</span>
+<span class="fc" id="L44">        config.setExposedHeaders(List.of(&quot;Authorization&quot;));</span>
+<span class="fc" id="L45">        config.setAllowCredentials(true);</span>
+<span class="fc" id="L46">        config.setMaxAge(3600L);</span>
+
+<span class="fc" id="L48">        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();</span>
+<span class="fc" id="L49">        source.registerCorsConfiguration(&quot;/**&quot;, config);</span>
+<span class="fc" id="L50">        return source;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
