@@ -1,0 +1,3 @@
+/workspace/Jenkis/src/test/java/pe/edu/vallegrande/workshop/WorkshopApplicationTests.java
+/workspace/Jenkis/src/test/java/pe/edu/vallegrande/workshop/service/KafkaProducerServiceTest.java
+/workspace/Jenkis/src/test/java/pe/edu/vallegrande/workshop/service/WorkshopServiceTest.java
