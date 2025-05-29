@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.929" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="1.794" tests="4" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="PYENV_SHELL" value="bash"/>
     <property name="IRBRC" value="/home/gitpod/.rvm/rubies/ruby-3.2.8/.irbrc"/>
+    <property name="PYENV_SHELL" value="bash"/>
     <property name="PATH" value="/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/home/gitpod/.local/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/home/gitpod/.rvm/gems/ruby-3.2.8/bin:/home/gitpod/.rvm/gems/ruby-3.2.8@global/bin:/home/gitpod/.rvm/rubies/ruby-3.2.8/bin:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.yarn/bin:/home/gitpod/.pnpm:/home/gitpod/.pyenv/bin:/home/gitpod/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/home/gitpod/.local/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v22.15.0/bin:/home/gitpod/.rvm/bin"/>
     <property name="NIX_VERSION" value="2.19.2"/>
     <property name="PYENV_FAKEROOT" value="/workspace/.pyenv_mirror/fakeroot"/>
@@ -17,18 +17,18 @@
     <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="GITPOD_TASKS" value="[{&quot;init&quot;:&quot;./mvnw install -DskipTests=false&quot;}]"/>
     <property name="COLORTERM" value="truecolor"/>
-    <property name="GITPOD_DISABLE_JETBRAINS_LOCAL_PORT_FORWARDING" value="false"/>
     <property name="GITPOD_THEIA_PORT" value="23000"/>
+    <property name="GITPOD_DISABLE_JETBRAINS_LOCAL_PORT_FORWARDING" value="false"/>
     <property name="SDKMAN_DIR" value="/home/gitpod/.sdkman"/>
-    <property name="VSCODE_GIT_ASKPASS_NODE" value="/ide/node"/>
     <property name="PROMPT_COMMAND" value="__vsc_prompt_cmd_original"/>
-    <property name="NGINX_DOCROOT_IN_REPO" value="public"/>
+    <property name="VSCODE_GIT_ASKPASS_NODE" value="/ide/node"/>
     <property name="rvm_version" value="1.29.12 (latest)"/>
-    <property name="PWD" value="/workspace/Jenkis"/>
+    <property name="NGINX_DOCROOT_IN_REPO" value="public"/>
     <property name="TERM_PROGRAM_VERSION" value="1.100.2"/>
+    <property name="PWD" value="/workspace/Jenkis"/>
     <property name="CARGO_HOME" value="/workspace/.cargo"/>
     <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/17.0.9-tem/lib"/>
-    <property name="sun.java.command" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529194954515_3.jar /workspace/Jenkis/target/surefire 2025-05-29T19-49-54_446-jvmRun1 surefire-20250529194954515_1tmp surefire_0-20250529194954515_2tmp"/>
+    <property name="sun.java.command" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529200604116_3.jar /workspace/Jenkis/target/surefire 2025-05-29T20-06-04_051-jvmRun1 surefire-20250529200604116_1tmp surefire_0-20250529200604116_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="LESSOPEN" value="| /usr/bin/lesspipe %s"/>
     <property name="SDKMAN_CANDIDATES_API" value="https://api.sdkman.io/2"/>
@@ -45,8 +45,8 @@
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="PYENV_INIT_LOCK" value="/tmp/.pyenv_init.lock"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="RUST_VERSION" value="1.86.0"/>
     <property name="PIP_CACHE_DIR" value="/workspace/.pyenv_mirror/pip_cache"/>
     <property name="GITPOD_WORKSPACE_CONTEXT_URL" value="https://github.com/GimenaCcoracQuispe/Jenkis/tree/workshop"/>
@@ -77,7 +77,7 @@
     <property name="TERM_PROGRAM" value="vscode"/>
     <property name="THEIA_RATELIMIT_LOG" value="50"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="56623"/>
+    <property name="PID" value="60485"/>
     <property name="PYENV_MIRROR" value="/workspace/.pyenv_mirror"/>
     <property name="MAVEN_PROJECTBASEDIR" value="/workspace/Jenkis"/>
     <property name="GOROOT" value="/home/gitpod/go"/>
@@ -86,8 +86,8 @@
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="GEM_PATH" value="/home/gitpod/.rvm/gems/ruby-3.2.8:/home/gitpod/.rvm/gems/ruby-3.2.8@global"/>
-    <property name="THEIA_MINI_BROWSER_HOST_PATTERN" value="browser-{{hostname}}"/>
     <property name="GITPOD_DEFAULT_WORKSPACE_IMAGE" value="gitpod/workspace-full:latest"/>
+    <property name="THEIA_MINI_BROWSER_HOST_PATTERN" value="browser-{{hostname}}"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="GITPOD_SSH_CA_PUBLIC_KEY" value="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMQPGLZ5GCM03ISbMVdPZE9YO3KjbXcaxpdcUNPRNnbJ Gitpod-CA"/>
@@ -103,10 +103,10 @@
     <property name="MAVEN_HOME" value="/home/gitpod/.sdkman/candidates/maven/current"/>
     <property name="DB_USERNAME" value="db_prs1_owner"/>
     <property name="user.timezone" value="Etc/UTC"/>
-    <property name="RUSTUP_HOME" value="/home/gitpod/.rustup"/>
-    <property name="GITPOD_HOST" value="https://gitpod.io"/>
-    <property name="GITPOD_REPO_ROOTS" value="/workspace/Jenkis"/>
     <property name="GITPOD_CODE_HOST" value="gitpod.io"/>
+    <property name="GITPOD_HOST" value="https://gitpod.io"/>
+    <property name="RUSTUP_HOME" value="/home/gitpod/.rustup"/>
+    <property name="GITPOD_REPO_ROOTS" value="/workspace/Jenkis"/>
     <property name="GITPOD_IS_SET_JAVA_XMX" value="false"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="os.name" value="Linux"/>
@@ -123,10 +123,10 @@
     <property name="APACHE_DOCROOT_IN_REPO" value="public"/>
     <property name="user.language" value="en"/>
     <property name="GP_OPEN_EDITOR" value="/ide/bin/remote-cli/gitpod-code"/>
-    <property name="PYENV_ROOT" value="/home/gitpod/.pyenv"/>
     <property name="GITPOD_PREVENT_METADATA_ACCESS" value="true"/>
-    <property name="OLDPWD" value="/workspace/Jenkis"/>
+    <property name="PYENV_ROOT" value="/home/gitpod/.pyenv"/>
     <property name="GOPATH" value="/workspace/go"/>
+    <property name="OLDPWD" value="/workspace/Jenkis"/>
     <property name="GITPOD_ANALYTICS_WRITER" value="segment"/>
     <property name="VISUAL" value="/ide/bin/remote-cli/gitpod-code"/>
     <property name="GEM_HOME" value="/home/gitpod/.rvm/gems/ruby-3.2.8"/>
@@ -140,7 +140,7 @@
     <property name="GITPOD_COMMIT_ANNOTATION_ENABLED" value="false"/>
     <property name="GITPOD_WORKSPACE_CLASS" value="g1-standard"/>
     <property name="LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"/>
-    <property name="surefire.real.class.path" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529194954515_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspace/Jenkis/target/surefire/surefirebooter-20250529200604116_3.jar"/>
     <property name="HISTFILE" value="/workspace/.gitpod/.shell_history"/>
     <property name="BROWSER" value="/ide/bin/helpers/browser.sh"/>
     <property name="LESSCLOSE" value="/usr/bin/lesspipe %s %s"/>
@@ -148,8 +148,8 @@
     <property name="rvm_bin_path" value="/home/gitpod/.rvm/bin"/>
     <property name="PYTHONUSERBASE_VERSION_FILE" value="/workspace/.pyenv_mirror/user/.mounted_version"/>
     <property name="path.separator" value=":"/>
-    <property name="CARGO_INSTALL_ROOT" value="/home/gitpod/.cargo"/>
     <property name="GITPOD_REPO_ROOT" value="/workspace/Jenkis"/>
+    <property name="CARGO_INSTALL_ROOT" value="/home/gitpod/.cargo"/>
     <property name="rvm_prefix" value="/home/gitpod"/>
     <property name="LANG" value="en_US.UTF-8"/>
     <property name="GITPOD_WORKSPACE_CLASS_INFO" value="{&quot;id&quot;:&quot;g1-standard&quot;,&quot;category&quot;:&quot;GENERAL PURPOSE&quot;,&quot;displayName&quot;:&quot;Standard&quot;,&quot;description&quot;:&quot;Up to 4 cores, 8GB RAM, 30GB storage&quot;,&quot;powerups&quot;:1,&quot;isDefault&quot;:true,&quot;deprecated&quot;:false}"/>
@@ -161,7 +161,7 @@
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="VSCODE_GIT_ASKPASS_EXTRA_ARGS" value=""/>
     <property name="GITPOD_WORKSPACE_CONTEXT" value="{&quot;ref&quot;:&quot;workshop&quot;,&quot;refType&quot;:&quot;branch&quot;,&quot;isFile&quot;:false,&quot;path&quot;:&quot;&quot;,&quot;title&quot;:&quot;GimenaCcoracQuispe/Jenkis - workshop&quot;,&quot;revision&quot;:&quot;95c097a985c1fb3b0d1599e27f154e3afbf12c26&quot;,&quot;repository&quot;:{&quot;cloneUrl&quot;:&quot;https://github.com/GimenaCcoracQuispe/Jenkis.git&quot;,&quot;host&quot;:&quot;github.com&quot;,&quot;defaultBranch&quot;:&quot;main&quot;,&quot;name&quot;:&quot;Jenkis&quot;,&quot;owner&quot;:&quot;GimenaCcoracQuispe&quot;,&quot;private&quot;:false},&quot;normalizedContextURL&quot;:&quot;https://github.com/GimenaCcoracQuispe/Jenkis/tree/workshop&quot;,&quot;checkoutLocation&quot;:&quot;Jenkis&quot;,&quot;warnings&quot;:[],&quot;additionalFiles&quot;:{&quot;.gitpod.yml&quot;:&quot;# This configuration file was automatically generated by Gitpod.\n# Please adjust to your needs (see https://www.gitpod.io/docs/introduction/learn-gitpod/gitpod-yaml)\n# and commit this file to your remote git repository to share the goodness with others.\n\n# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart\n\ntasks:\n  - init: ./mvnw install -DskipTests=false\n\n\n&quot;}}"/>
-    <property name="MAVEN_CMD_LINE_ARGS" value=" test"/>
+    <property name="MAVEN_CMD_LINE_ARGS" value=" clean verify"/>
     <property name="SDKMAN_CANDIDATES_DIR" value="/home/gitpod/.sdkman/candidates"/>
     <property name="PYCHARM_PYTHON_PATH" value="/home/gitpod/.pyenv/shims/python"/>
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
@@ -175,19 +175,19 @@
     <property name="SDKMAN_PLATFORM" value="linuxx64"/>
     <property name="USER" value="gitpod"/>
     <property name="THEIA_WORKSPACE_ROOT" value="/workspace/Jenkis"/>
-    <property name="EDITOR" value="/ide/bin/remote-cli/gitpod-code"/>
     <property name="TRIGGER_REBUILD" value="2"/>
+    <property name="EDITOR" value="/ide/bin/remote-cli/gitpod-code"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="HOSTNAME" value="gimenaccoracquis-jenkis-oomsfa4hc32"/>
     <property name="java.vm.version" value="17.0.9+9"/>
     <property name="java.class.version" value="61.0"/>
-    <property name="GITPOD_GIT_USER_EMAIL" value="gimena.ccorac@vallegrande.edu.pe"/>
-    <property name="HOME" value="/home/gitpod"/>
     <property name="GP_PREVIEW_BROWSER" value="/ide/bin/remote-cli/gitpod-code --preview"/>
+    <property name="HOME" value="/home/gitpod"/>
+    <property name="GITPOD_GIT_USER_EMAIL" value="gimena.ccorac@vallegrande.edu.pe"/>
   </properties>
-  <testcase name="testCreateWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.305">
-    <system-out><![CDATA[2025-05-29T19:49:59.168Z  INFO 56623 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pe.edu.vallegrande.workshop.controller.WorkshopControllerTest]: WorkshopControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-29T19:49:59.193Z  INFO 56623 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pe.edu.vallegrande.workshop.WorkshopApplication for test class pe.edu.vallegrande.workshop.controller.WorkshopControllerTest
+  <testcase name="testCreateWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.911">
+    <system-out><![CDATA[2025-05-29T20:06:10.277Z  INFO 60485 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pe.edu.vallegrande.workshop.controller.WorkshopControllerTest]: WorkshopControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-29T20:06:10.302Z  INFO 60485 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pe.edu.vallegrande.workshop.WorkshopApplication for test class pe.edu.vallegrande.workshop.controller.WorkshopControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -198,15 +198,15 @@
 
  :: Spring Boot ::                (v3.4.4)
 
-2025-05-29T19:49:59.228Z  INFO 56623 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Starting WorkshopControllerTest using Java 17.0.9 with PID 56623 (started by gitpod in /workspace/Jenkis)
-2025-05-29T19:49:59.228Z  INFO 56623 --- [           main] p.e.v.w.c.WorkshopControllerTest         : The following 1 profile is active: "test"
-2025-05-29T19:49:59.700Z  INFO 56623 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Started WorkshopControllerTest in 0.504 seconds (process running for 5.103)
+2025-05-29T20:06:10.362Z  INFO 60485 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Starting WorkshopControllerTest using Java 17.0.9 with PID 60485 (started by gitpod in /workspace/Jenkis)
+2025-05-29T20:06:10.363Z  INFO 60485 --- [           main] p.e.v.w.c.WorkshopControllerTest         : The following 1 profile is active: "test"
+2025-05-29T20:06:11.017Z  INFO 60485 --- [           main] p.e.v.w.c.WorkshopControllerTest         : Started WorkshopControllerTest in 0.711 seconds (process running for 6.781)
 ]]></system-out>
   </testcase>
-  <testcase name="testGetWorkshopById" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.023"/>
-  <testcase name="testGetWorkshopList" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.037">
-    <system-out><![CDATA[2025-05-29T19:50:00.050Z  INFO 56623 --- [     parallel-1] p.e.v.w.controller.WorkshopController    : Workshop data: Workshop(id=1, name=Curso de Java, description=Aprende Java desde cero, startDate=2025-05-01, endDate=2025-05-31, observation=Incluye proyectos, state=A, personId=2,10,11,19,18,17,25,24)
+  <testcase name="testGetWorkshopById" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.037"/>
+  <testcase name="testGetWorkshopList" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.066">
+    <system-out><![CDATA[2025-05-29T20:06:11.996Z  INFO 60485 --- [     parallel-1] p.e.v.w.controller.WorkshopController    : Workshop data: Workshop(id=1, name=Curso de Java, description=Aprende Java desde cero, startDate=2025-05-01, endDate=2025-05-31, observation=Incluye proyectos, state=A, personId=2,10,11,19,18,17,25,24)
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.011"/>
+  <testcase name="testDeleteWorkshop" classname="pe.edu.vallegrande.workshop.controller.WorkshopControllerTest" time="0.017"/>
 </testsuite>
