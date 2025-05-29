@@ -55,7 +55,7 @@ class WorkshopServiceTest {
     }
 
     @Test
-    public void testFindStatus() {
+    void testFindStatus() {
         when(workshopRepository.findAllByState("A")).thenReturn(Flux.just(workshop));
 
         StepVerifier.create(workshopService.findStatus("A"))
