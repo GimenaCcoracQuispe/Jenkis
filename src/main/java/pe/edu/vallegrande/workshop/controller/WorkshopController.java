@@ -7,7 +7,10 @@ import pe.edu.vallegrande.workshop.model.Workshop;
 import pe.edu.vallegrande.workshop.service.WorkshopService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import lombok.extern.slf4j.Slf4j;
 
+
+@Slf4j
 @RestController
 @RequestMapping("/api/workshops")
 @CrossOrigin(origins = "*")
@@ -19,7 +22,7 @@ public class WorkshopController {
     @GetMapping("/list")
     public Flux<Workshop> getWorkshop() {
         return workshopService.findAllWorkshop()
-                .doOnNext(workshop -> System.out.println("Workshop data: " + workshop));
+                .doOnNext(workshop -> log.info("Workshop data: {}", workshop));
     }
 
     @GetMapping("/{id}")
