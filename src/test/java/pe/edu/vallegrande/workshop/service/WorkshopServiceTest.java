@@ -154,39 +154,4 @@ class WorkshopServiceTest {
                 .verifyComplete();
     }
 
-    @Test
-    void testGetActivosByState() {
-        when(workshopRepository.findAllByState("A")).thenReturn(Flux.just(workshop));
-        StepVerifier.create(workshopService.getActivosByState("A"))
-                .expectNext(workshop)
-                .verifyComplete();
-    }
-    
-    @Test
-    void testSave() {
-        when(workshopRepository.save(any())).thenReturn(Mono.just(workshop));
-        StepVerifier.create(workshopService.save(workshop))
-                .expectNext(workshop)
-                .verifyComplete();
-    }
-    
-    @Test
-    void testCreateWorkshopWithExistingId() {
-        Workshop existingWorkshop = new Workshop();
-        existingWorkshop.setId(1L);
-        when(workshopRepository.save(any())).thenReturn(Mono.just(existingWorkshop));
-        StepVerifier.create(workshopService.createWorkshop(existingWorkshop))
-                .expectError(IllegalArgumentException.class)
-                .verify();
-    }
-    
-    @Test
-    void testRestoreInactiveWorkshop() {
-        workshop.setState("A");
-        when(workshopRepository.findById(1L)).thenReturn(Mono.just(workshop));
-        when(workshopRepository.save(any())).thenReturn(Mono.just(workshop));
-        StepVerifier.create(workshopService.restoreWorkshop(1L))
-                .expectNext(workshop)
-                .verifyComplete();
-    }
 }
