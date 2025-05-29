@@ -31,7 +31,7 @@ public class WorkshopServiceTest {
     private Workshop workshop;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         MockitoAnnotations.openMocks(this);
 
         workshop = new Workshop();
@@ -46,7 +46,7 @@ public class WorkshopServiceTest {
     }
 
     @Test
-    public void testFindAllWorkshop() {
+    void testFindAllWorkshop() {
         when(workshopRepository.findAll()).thenReturn(Flux.just(workshop));
 
         StepVerifier.create(workshopService.findAllWorkshop())
@@ -64,16 +64,16 @@ public class WorkshopServiceTest {
     }
 
     @Test
-public void testCreateWorkshopWithDefaultState() {
-    Workshop newWorkshop = new Workshop();
-    newWorkshop.setName("Nuevo Taller");
-
-    System.out.println("Before createWorkshop: state=" + newWorkshop.getState()); // Debug
-
-    when(workshopRepository.save(any())).thenAnswer(invocation -> {
-        Workshop arg = invocation.getArgument(0);
-        System.out.println("Saving workshop with state: " + arg.getState()); // Debug
-        return Mono.just(arg);
+    void testCreateWorkshopWithDefaultState() {
+        Workshop newWorkshop = new Workshop();
+        newWorkshop.setName("Nuevo Taller");
+    
+        System.out.println("Before createWorkshop: state=" + newWorkshop.getState()); // Debug
+    
+        when(workshopRepository.save(any())).thenAnswer(invocation -> {
+            Workshop arg = invocation.getArgument(0);
+            System.out.println("Saving workshop with state: " + arg.getState()); // Debug
+            return Mono.just(arg);
     });
 
     doNothing().when(kafkaProducerService).sendWorkshopEvent(any());
@@ -91,7 +91,7 @@ public void testCreateWorkshopWithDefaultState() {
 
 
     @Test
-    public void testUpdateWorkshop() {
+    void testUpdateWorkshop() {
         when(workshopRepository.save(any())).thenReturn(Mono.just(workshop));
 
         StepVerifier.create(workshopService.updateWorkshop(workshop))
@@ -102,7 +102,7 @@ public void testCreateWorkshopWithDefaultState() {
     }
 
     @Test
-    public void testLogicalDelete() {
+    void testLogicalDelete() {
         when(workshopRepository.findById(1L)).thenReturn(Mono.just(workshop));
         when(workshopRepository.save(any())).thenReturn(Mono.just(workshop));
 
@@ -114,7 +114,7 @@ public void testCreateWorkshopWithDefaultState() {
     }
 
     @Test
-    public void testRestoreWorkshop() {
+    void testRestoreWorkshop() {
         workshop.setState("I");
         when(workshopRepository.findById(1L)).thenReturn(Mono.just(workshop));
         when(workshopRepository.save(any())).thenReturn(Mono.just(workshop));
@@ -127,7 +127,7 @@ public void testCreateWorkshopWithDefaultState() {
     }
 
     @Test
-    public void testDeleteById() {
+    void testDeleteById() {
         when(workshopRepository.findById(1L)).thenReturn(Mono.just(workshop));
         when(workshopRepository.deleteById(1L)).thenReturn(Mono.empty());
 
@@ -138,7 +138,7 @@ public void testCreateWorkshopWithDefaultState() {
     }
 
     @Test
-    public void testInactiveWorkshop() {
+    void testInactiveWorkshop() {
         when(workshopRepository.inactiveWorkshop(1L)).thenReturn(Mono.empty());
 
         StepVerifier.create(workshopService.inactiveWorkshop(1L))
@@ -146,7 +146,7 @@ public void testCreateWorkshopWithDefaultState() {
     }
 
     @Test
-    public void testFindById() {
+    void testFindById() {
         when(workshopRepository.findById(1L)).thenReturn(Mono.just(workshop));
 
         StepVerifier.create(workshopService.findById(1L))
